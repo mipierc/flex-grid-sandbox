@@ -1,3 +1,90 @@
 body{
-  
+  font-family: 'Arial', sans-serif;
+  border: 3px dotted darkgrey;
+  padding: 1em;
+  color: #333;
+}
+
+.grid-container{
+  border: 2px dashed black;
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+                      "head head head head head"
+                      "headline1 headline1 headline1 headline2 headline2"
+                      "headline1 headline1 headline1 headline3 headline3"
+                      "wall wall headline4 headline4 headline4"
+                      "wall wall headline5 headline5 headline5"
+                      "story1 story2 story3 story4 story5"
+                      "close1 close1 close1 close2 close2"
+                      "foot foot foot foot foot"
+
+}
+
+.grid-item{
+  border: 2px solid purple;
+  background-color: #f8f8ff;
+}
+
+.one{
+  grid-area: head;
+}
+
+.two{
+  grid-area: headline1;
+}
+
+.three{
+  grid-area: headline2;
+}
+
+.four{
+  grid-area: headline3;
+}
+
+.five{
+  grid-area: headline4;
+}
+
+.six{
+  grid-area: headline5;
+}
+
+.seven{
+  grid-area: wall;
+}
+
+.eight{
+
+  grid-area: story1;
+}
+
+.nine{
+  grid-area: story2;
+}
+
+.ten{
+  grid-area: story3;
+}
+
+.eleven{
+  grid-area: story4;
+}
+
+.twelve{
+  grid-area: story5;
+}
+
+.thirteen{
+  grid-area: close1;
+}
+
+.fourteen{
+  grid-area: close2;
+}
+
+.fifteen{
+  grid-area: foot;
 }
